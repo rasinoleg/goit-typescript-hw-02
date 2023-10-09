@@ -12,9 +12,11 @@ type User = {
   surname: string;
   email: string;
   password: string;
-}
+};
 
-function createOrUpdateUser(initialValues: User) {
+type UserKeys = keyof User;
+
+function createOrUpdateUser(initialValues: Partial<User>) {
   // Оновлення користувача
 }
 
